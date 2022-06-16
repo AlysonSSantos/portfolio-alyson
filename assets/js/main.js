@@ -1,5 +1,3 @@
-
-
 const navigation = (way) =>{
     let sidebar = document.querySelector('.sidebar');
     let menuOptions = document.querySelector('.sidebar ul');

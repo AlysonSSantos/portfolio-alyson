@@ -1,0 +1,62 @@
+@keyframes animateMenuIn {
+    0%{
+        margin-top: -1rem;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes animateMenuOut {
+    0%{
+        margin-top: 0rem;
+        opacity: 1;
+    }
+    100%{
+        margin-top: -1rem;
+        opacity: 0;
+    }
+}
+
+@keyframes animate-exit-button-in {
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes animate-exit-button-out {
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes animateAction {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes backgroundAnimate {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/typeit@8.6.0/dist/index.umd.js"></script>
+    <script src="assets/js/animate.js" defer></script>
+    
+</head>
+<body>
+    <header>
+
+        <input type="button" value="Contate-me" id="callToContact"/>
+
+        <div onclick="navigation('openMenu')" class="menuIcon">
+            <div class="menu-style-line-1"></div>
+            <div class="menu-style-middle-line"></div>
+            <div class="menu-style-line-1"></div>
+        </div>
+
+        <nav class="sidebar">
+            <span onclick="navigation('closeMenu')" class="exit-button"> <img src="assets/media/close-icon.png" alt="menu close icon"/> </span>
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Conhecimentos</li>
+                <li>Projetos</li>
+                <li>Contate-me</li>
+            </ul>
+        </nav>
+
+    </header>
+
+   <div class="bg">
+    <video autoplay loop>
+        <source src="assets/media/Glitch - 36784.mp4" type="video/mp4">
+    </video>
+   </div>
+
+    <div onclick="redirect('initialRedirect')" class="init-container">
+
+        <div class="action">
+            <p>Clique  aqui para entrar</p>
+        </div>
+
+        <p id="init-bottom-text">
+             Sites comuns são muito genéricos, este está fora do padrão. <span id="click-area">Venha comigo!</span>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,6 +1,4 @@
-const playVid = () =>{
-   document.getElementById("vid").play();
-}
+
 
 const navigation = (way) =>{
     let sidebar = document.querySelector('.sidebar');

@@ -1,3 +1,7 @@
+window.addEventListener('load', ()=>{
+    document.querySelector(".bg video").play()
+})
+
 const navigation = (way) =>{
     let sidebar = document.querySelector('.sidebar');
     let menuOptions = document.querySelector('.sidebar ul');
@@ -37,3 +41,5 @@ function redirect (to){
         break;
     }
 }
+
+

@@ -16,45 +16,25 @@
     
 </head>
 <body>
-    <header>
 
-        <input type="button" value="Contate-me" id="callToContact"/>
-
-        <div onclick="navigation('openMenu')" class="menuIcon">
-            <div class="menu-style-line-1"></div>
-            <div class="menu-style-middle-line"></div>
-            <div class="menu-style-line-1"></div>
-        </div>
-
-        <nav class="sidebar">
-            <span onclick="navigation('closeMenu')" class="exit-button"> <img src="assets/media/close-icon.png" alt="menu close icon"/> </span>
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Conhecimentos</li>
-                <li>Projetos</li>
-                <li>Contate-me</li>
-            </ul>
-        </nav>
-
+    <header class="init-menu">
     </header>
 
-   <div class="bg">
-    <video autoplay loop muted>
-        <source src="assets/media/Glitch - 36784.mp4" type="video/mp4">
-    </video>
-   </div>
+    <header style="display: none;" class="main-header">
+    </header>
 
-    <div onclick="redirect('initialRedirect')" class="init-container">
-
-        <div class="action">
-            <p>Clique  aqui para entrar</p>
-        </div>
-
-        <p id="init-bottom-text">
-             Sites comuns são muito genéricos, este está fora do padrão. <span id="click-area">Venha comigo!</span>
-        </p>
+    <div class="initial-screen">
     </div>
+
+    <main class="content">
+
+            <div class="presentation-text">
+                <p class="presentation-paragraph">Olá, eu sou o</p>
+                <h1 class="presentation-title">Alyson S. Santos</h1>
+                <p class="presentation-paragraph">Front-end Developer e Web Designer</p>
+            </div>
+            
+    </main>
 
 </body>
 </html>

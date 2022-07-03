@@ -8,6 +8,15 @@
     margin: 0;
     padding: 0;
 }
+*::selection{
+    background: #636161;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --main-color: #1c3474;
     --background: #faf5f5;
@@ -25,10 +34,9 @@ html{
     position: fixed;
     inset: 0;
     z-index: -1;
-    /*animation: backgroundAnimate 15s ease infinite;*/
 }
 
-#callToContact{
+.callToContact{
     background: none;
     border: solid 1px var(--color001);
     padding: .5rem;
@@ -37,7 +45,7 @@ html{
     font-weight: 400;
     color: var(--color001)
 }
-#callToContact:hover{
+.callToContact:hover{
     background-image: linear-gradient(90deg, var(--color002), #000000);
 }
 
@@ -61,7 +69,7 @@ html{
     background: var(--color002);
 }
 
-.sidebar{
+.sidebar, .main-sidebar{
     background: #0a0a0a;
     position: absolute;
     inset: 0;
@@ -72,7 +80,7 @@ html{
     text-align: center;
     display: none;
 }
-.exit-button{
+.exit-button, .exit-main-menu-icon{
     box-shadow: 0 0 .5rem 1rem #fff;
     background: #fff;
     position: absolute;
@@ -83,10 +91,10 @@ html{
     padding: 1rem 1rem 1rem 1.5rem;
     backdrop-filter: blur(3px);
 }
-.exit-button img{
+.exit-button img, .exit-main-menu-icon img{
     animation: none;
 }
-.sidebar ul li{
+.sidebar ul li, .main-sidebar ul li{
     cursor: pointer;
     list-style: none;
     margin: 0 0 2.5rem 0;
@@ -94,12 +102,12 @@ html{
     font-size: 1.7rem;
     color: #fff;
 }
-.sidebar ul li:hover{
+.sidebar ul li:hover, .main-sidebar ul li:hover{
     border: solid .1px #fff;
     transition: .2s;
 }
 
-.sidebar ul{
+.sidebar ul, .main-sidebar ul{
     transition: 5s;
 }
 
@@ -132,9 +140,26 @@ html{
 
 .action p{
     position: absolute; 
-    top: 17rem; 
+    top: calc(50% - 1rem);
     animation: ease 1.8s animateAction infinite;
     cursor: pointer;
+}
+
+main.content{
+    display: none;
+}
+
+.presentation-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    animation: ease-in reveal 1.7s;
+}
+
+.presentation-text p{
+    margin: .4rem auto;
 }
 
 @media screen and (max-width: 750px) {

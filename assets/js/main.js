@@ -1,5 +1,5 @@
 const initialHeader = `
-        <input type="button" value="Contate-me" class="callToContact"/>
+        <input type="button" value="x Alyson S." class="callToContact"/>
 
         <div onclick="navigation('openInitialMenu')" class="menuIcon">
             <div class="menu-style-line-1"></div>

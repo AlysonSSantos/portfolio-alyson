@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () =>{
-    new TypeIt("",{
+    new TypeIt(".animated-text",{
         speed: 50,
         startDelay: 700,
         waitUntilVisible: true,

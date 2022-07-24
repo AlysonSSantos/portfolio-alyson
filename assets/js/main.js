@@ -42,7 +42,7 @@ const mainContentHeader = `
 
 const initialContent = `
     <div class="bg">
-        <video autoplay loop muted>
+        <video  autoplay loop muted playsinline>
             <source src="assets/media/Glitch - 36784.mp4" type="video/mp4">
         </video>
     </div>

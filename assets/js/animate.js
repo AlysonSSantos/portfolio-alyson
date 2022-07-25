@@ -39,10 +39,15 @@ document.addEventListener('DOMContentLoaded', () =>{
     .delete()
     .type("Canva")
     .pause(1500)
+    .delete()
     .type("Social Media")
     .pause(1500)
+    .delete()
     .type("Criação de Identidade Visual")
     .pause(1500)
     .delete()
+    .delete()
     .go()
 })
+
+

@@ -34,6 +34,7 @@ html{
     position: fixed;
     inset: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .callToContact{
@@ -157,7 +158,7 @@ main.content{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10.5rem 0 80vh 0;
+    margin: 10.5rem 0 22rem 0;
     animation: ease-in reveal 1.7s;
 }
 
@@ -178,11 +179,24 @@ main.content{
 
 }
 
+.animated-text{
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 750px) {
     .menuIcon{
         margin: 1.2rem 1.5rem;
     }
     .description{
-        max-width: 450px;
+        max-width: 430px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    video{
+        display: none;
+    }
+    h2{
+        font-size: calc(inherit + 1rem);
     }
 }
